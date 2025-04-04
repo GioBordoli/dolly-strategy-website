@@ -31,7 +31,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-primary-blue text-white fixed w-full z-10">
+    <header className="bg-primary-blue text-white fixed w-full z-10 shadow-md">
       <div className="container-custom mx-auto px-4">
         <div className="flex justify-between items-center py-3">
           {/* Logo */}
@@ -39,8 +39,8 @@ const Header = () => {
             <Image 
               src="/images/white-logo.png" 
               alt="Dolly Strategy Logo" 
-              width={120} 
-              height={38} 
+              width={80} 
+              height={24} 
               className="object-contain"
               priority
             />

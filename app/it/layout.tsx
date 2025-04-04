@@ -15,7 +15,7 @@ export default function ItalianLayout({
   return (
     <>
       <Header />
-      <main className="pt-16 flex-grow">{children}</main>
+      <main className="pt-24 flex-grow">{children}</main>
       <Footer />
     </>
   );

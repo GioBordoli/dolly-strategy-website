@@ -18,8 +18,8 @@ const Footer = () => {
               <Image 
                 src="/images/white-logo.png" 
                 alt="Dolly Strategy Logo" 
-                width={120} 
-                height={38} 
+                width={80} 
+                height={24} 
                 className="object-contain"
               />
             </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function HomePageItalian() {
   return (
-    <div className="min-h-screen flex items-center justify-center py-16 relative">
+    <div className="min-h-screen flex items-center justify-center relative">
       {/* Background image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
