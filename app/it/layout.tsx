@@ -1,7 +1,6 @@
-import type { Metadata } from 'next';
-import '../globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Dolly Strategy | Soluzioni AI per le Aziende Italiane',
@@ -14,12 +13,10 @@ export default function ItalianLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="it">
-      <body>
-        <Header />
-        <main className="pt-16">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <Header />
+      <main className="pt-16 flex-grow">{children}</main>
+      <Footer />
+    </>
   );
 } 

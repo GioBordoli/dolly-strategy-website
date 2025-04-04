@@ -1,7 +1,9 @@
+import EnglishLayout from '../layout-en';
+
 export default function ContactPage() {
   return (
-    <div className="min-h-screen py-16 pt-24">
-      <div className="container-custom">
+    <EnglishLayout>
+      <div className="min-h-screen py-16">
         {/* Page Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
@@ -122,6 +124,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </div>
+    </EnglishLayout>
   );
 } 

@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'Dolly Strategy | AI Solutions for Italian Businesses',
@@ -15,10 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        <main className="pt-16">{children}</main>
-        <Footer />
+      <body className="min-h-screen flex flex-col">
+        {children}
       </body>
     </html>
   );
