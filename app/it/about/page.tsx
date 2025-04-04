@@ -36,30 +36,6 @@ export default function AboutPageItalian() {
           </div>
         </div>
 
-        {/* Founder Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
-          <div className="md:order-2">
-            <h2 className="text-3xl font-bold mb-6">Il Nostro Fondatore</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Giorgio Bordoli ha fondato Dolly Strategy con la visione di trasformare il modo in cui le aziende italiane affrontano l&apos;intelligenza artificiale. Con un background in tecnologia e consulenza aziendale, Giorgio ha riconosciuto l&apos;immenso potenziale dell&apos;AI per le aziende di tutte le dimensioni.
-            </p>
-            <p className="text-lg text-gray-700 mb-6">
-              Avendo lavorato con imprese in tutta Italia, Giorgio ha osservato un significativo divario tra le possibilità tecnologiche e le implementazioni pratiche, specialmente per le piccole e medie imprese. Questa intuizione è diventata la base per la missione di Dolly Strategy.
-            </p>
-            <p className="text-lg text-gray-700">
-              L&apos;esperienza di Giorgio nel collegare l&apos;innovazione tecnica con la strategia aziendale consente a Dolly Strategy di fornire soluzioni AI che sono sia all&apos;avanguardia che immediatamente applicabili alle sfide aziendali del mondo reale.
-            </p>
-          </div>
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-lg md:order-1">
-            <Image 
-              src="/images/team/giorgio.jpg" 
-              alt="Giorgio Bordoli - Fondatore e CEO" 
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-
         {/* Values Section */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold mb-10 text-center">I Nostri Valori</h2>
@@ -106,19 +82,9 @@ export default function AboutPageItalian() {
           <p className="text-lg text-center text-gray-700 mb-10">
             Dolly Strategy è alimentata da un team diversificato di esperti in intelligenza artificiale, data science, strategia aziendale e domini specifici del settore.
           </p>
-          
-          {/* Team Group Photo */}
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-lg mb-16">
-            <Image 
-              src="/images/team/group-photo.jpg" 
-              alt="Team di Dolly Strategy" 
-              fill
-              className="object-cover"
-            />
-          </div>
 
           {/* Individual Team Members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Giorgio Bordoli - CEO & Fondatore */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-64">

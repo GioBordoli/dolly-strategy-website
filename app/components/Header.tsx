@@ -39,8 +39,8 @@ const Header = () => {
             <Image 
               src="/images/white-logo.png" 
               alt="Dolly Strategy Logo" 
-              width={160} 
-              height={50} 
+              width={120} 
+              height={38} 
               className="object-contain"
               priority
             />

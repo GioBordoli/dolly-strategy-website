@@ -38,30 +38,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Founder Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
-            <div className="md:order-2">
-              <h2 className="text-3xl font-bold mb-6">Our Founder</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                Giorgio Bordoli founded Dolly Strategy with a vision to transform how Italian businesses approach artificial intelligence. With a background in technology and business consulting, Giorgio recognized the immense potential of AI for businesses of all sizes.
-              </p>
-              <p className="text-lg text-gray-700 mb-6">
-                Having worked with enterprises across Italy, Giorgio observed a significant gap between technological possibilities and practical implementations, especially for small and medium-sized enterprises. This insight became the foundation for Dolly Strategy's mission.
-              </p>
-              <p className="text-lg text-gray-700">
-                Giorgio's expertise in bridging technical innovation with business strategy enables Dolly Strategy to deliver AI solutions that are both cutting-edge and immediately applicable to real-world business challenges.
-              </p>
-            </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg md:order-1">
-              <Image 
-                src="/images/team/giorgio.jpg" 
-                alt="Giorgio Bordoli - Founder and CEO" 
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-
           {/* Values Section */}
           <div className="mb-20">
             <h2 className="text-3xl font-bold mb-10 text-center">Our Values</h2>
@@ -108,19 +84,9 @@ export default function AboutPage() {
             <p className="text-lg text-center text-gray-700 mb-10">
               Dolly Strategy is powered by a diverse team of experts in artificial intelligence, data science, business strategy, and industry-specific domains.
             </p>
-            
-            {/* Team Group Photo */}
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg mb-16">
-              <Image 
-                src="/images/team/group-photo.jpg" 
-                alt="Dolly Strategy Team" 
-                fill
-                className="object-cover"
-              />
-            </div>
 
             {/* Individual Team Members */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {/* Giorgio Bordoli - CEO & Founder */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="relative h-64">
