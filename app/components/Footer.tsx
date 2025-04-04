@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const Footer = () => {
@@ -13,7 +14,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Dolly Strategy</h3>
+            <div className="mb-4">
+              <Image 
+                src="/images/white-logo.png" 
+                alt="Dolly Strategy Logo" 
+                width={180} 
+                height={55} 
+                className="object-contain"
+              />
+            </div>
             <p className="mb-2">
               {isItalian
                 ? 'Soluzioni AI per le Aziende Italiane'

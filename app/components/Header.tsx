@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -32,10 +33,17 @@ const Header = () => {
   return (
     <header className="bg-primary-blue text-white fixed w-full z-10">
       <div className="container-custom mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3">
           {/* Logo */}
-          <Link href={isItalian ? '/it' : '/'} className="font-bold text-xl">
-            Dolly Strategy
+          <Link href={isItalian ? '/it' : '/'} className="flex items-center">
+            <Image 
+              src="/images/white-logo.png" 
+              alt="Dolly Strategy Logo" 
+              width={160} 
+              height={50} 
+              className="object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

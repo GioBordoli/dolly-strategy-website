@@ -29,10 +29,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-              {/* Placeholder for an image */}
-              <div className="bg-gray-200 h-full w-full flex items-center justify-center">
-                <p className="text-gray-500">Mission Image Placeholder</p>
-              </div>
+              <Image 
+                src="/images/mission.jpg" 
+                alt="Dolly Strategy Mission" 
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
@@ -41,20 +43,22 @@ export default function AboutPage() {
             <div className="md:order-2">
               <h2 className="text-3xl font-bold mb-6">Our Founder</h2>
               <p className="text-lg text-gray-700 mb-6">
-                Founded by AI enthusiasts with years of experience in business transformation, Dolly Strategy brings together expertise in artificial intelligence, data science, and business strategy.
+                Giorgio Bordoli founded Dolly Strategy with a vision to transform how Italian businesses approach artificial intelligence. With a background in technology and business consulting, Giorgio recognized the immense potential of AI for businesses of all sizes.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Our founder recognized the immense potential of AI in transforming businesses but also observed a significant gap between technological possibilities and practical implementations, especially for small and medium-sized enterprises in Italy.
+                Having worked with enterprises across Italy, Giorgio observed a significant gap between technological possibilities and practical implementations, especially for small and medium-sized enterprises. This insight became the foundation for Dolly Strategy's mission.
               </p>
               <p className="text-lg text-gray-700">
-                With a background in both technology and business consulting, our leadership team is uniquely positioned to understand the challenges businesses face and identify opportunities where AI can make the most impact.
+                Giorgio's expertise in bridging technical innovation with business strategy enables Dolly Strategy to deliver AI solutions that are both cutting-edge and immediately applicable to real-world business challenges.
               </p>
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg md:order-1">
-              {/* Placeholder for founder image */}
-              <div className="bg-gray-200 h-full w-full flex items-center justify-center">
-                <p className="text-gray-500">Founder Image Placeholder</p>
-              </div>
+              <Image 
+                src="/images/team/giorgio.jpg" 
+                alt="Giorgio Bordoli - Founder and CEO" 
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 
@@ -98,16 +102,121 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Team Section (Placeholder for future expansion) */}
-          <div className="bg-gray-50 p-12 rounded-lg mb-20">
+          {/* Team Section */}
+          <div className="mb-20">
             <h2 className="text-3xl font-bold mb-10 text-center">Our Team</h2>
             <p className="text-lg text-center text-gray-700 mb-10">
               Dolly Strategy is powered by a diverse team of experts in artificial intelligence, data science, business strategy, and industry-specific domains.
             </p>
-            <div className="text-center">
-              <p className="text-lg text-gray-700 italic">
-                Team profiles coming soon...
-              </p>
+            
+            {/* Team Group Photo */}
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-lg mb-16">
+              <Image 
+                src="/images/team/group-photo.jpg" 
+                alt="Dolly Strategy Team" 
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Individual Team Members */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+              {/* Giorgio Bordoli - CEO & Founder */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="relative h-64">
+                  <Image 
+                    src="/images/team/giorgio.jpg" 
+                    alt="Giorgio Bordoli" 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">Giorgio Bordoli</h3>
+                  <p className="text-primary-blue font-semibold mb-3">CEO & Founder</p>
+                  <p className="text-gray-600">
+                    Visionary entrepreneur with expertise in AI implementation and business transformation. Giorgio leads our strategic direction and client partnerships.
+                  </p>
+                </div>
+              </div>
+
+              {/* Daniel Maurot - CFO */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="relative h-64">
+                  <Image 
+                    src="/images/team/daniel.jpg" 
+                    alt="Daniel Maurot" 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">Daniel Maurot</h3>
+                  <p className="text-primary-blue font-semibold mb-3">Chief Financial Officer</p>
+                  <p className="text-gray-600">
+                    Financial strategist with deep experience in technology investments. Daniel ensures our growth is sustainable while maximizing value for our clients.
+                  </p>
+                </div>
+              </div>
+
+              {/* Marissa - Lead Operations Officer */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="relative h-64">
+                  <Image 
+                    src="/images/team/marissa.jpg" 
+                    alt="Marissa" 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">Marissa</h3>
+                  <p className="text-primary-blue font-semibold mb-3">Lead Operations Officer</p>
+                  <p className="text-gray-600">
+                    Operations expert who orchestrates our project delivery with precision and excellence. Marissa ensures seamless execution of all client solutions.
+                  </p>
+                </div>
+              </div>
+
+              {/* Laura - Executive Secretary */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="relative h-64">
+                  <Image 
+                    src="/images/team/laura.jpg" 
+                    alt="Laura" 
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">Laura</h3>
+                  <p className="text-primary-blue font-semibold mb-3">Executive Secretary</p>
+                  <p className="text-gray-600">
+                    Communication specialist who coordinates our executive activities and client relationships. Laura ensures our operations run smoothly and efficiently.
+                  </p>
+                </div>
+              </div>
+
+              {/* Kush Burdak - ML Specialist */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2 lg:col-span-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                  <div className="relative h-64 lg:h-auto">
+                    <Image 
+                      src="/images/team/kush.jpg" 
+                      alt="Kush Burdak" 
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6 lg:col-span-2 flex flex-col justify-center">
+                    <h3 className="text-xl font-bold mb-1">Kush Burdak</h3>
+                    <p className="text-primary-blue font-semibold mb-3">Machine Learning Specialist</p>
+                    <p className="text-gray-600">
+                      AI and machine learning expert with a deep understanding of advanced algorithms and data science. Kush leads our technical implementation team, designing innovative solutions that transform raw data into actionable business intelligence. His expertise spans natural language processing, predictive analytics, and computer vision, ensuring our clients receive cutting-edge AI applications that deliver measurable results.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
