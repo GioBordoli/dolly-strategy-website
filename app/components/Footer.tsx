@@ -62,6 +62,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
+                  href={isItalian ? '/it/quiz' : '/quiz'}
+                  className="hover:text-gray-300 transition"
+                >
+                  {isItalian ? 'Quiz' : 'Profit Quiz'}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={isItalian ? '/it/blog' : '/blog'}
                   className="hover:text-gray-300 transition"
                 >

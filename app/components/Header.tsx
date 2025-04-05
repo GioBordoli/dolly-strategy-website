@@ -26,6 +26,7 @@ const Header = () => {
     { name: isItalian ? 'Home' : 'Home', href: isItalian ? '/it' : '/' },
     { name: isItalian ? 'Servizi' : 'Services', href: isItalian ? '/it/services' : '/services' },
     { name: isItalian ? 'Chi Siamo' : 'About', href: isItalian ? '/it/about' : '/about' },
+    { name: isItalian ? 'Quiz' : 'Profit Quiz', href: isItalian ? '/it/quiz' : '/quiz' },
     { name: isItalian ? 'Blog' : 'Blog', href: isItalian ? '/it/blog' : '/blog' },
     { name: isItalian ? 'Contatti' : 'Contact', href: isItalian ? '/it/contact' : '/contact' },
   ];
