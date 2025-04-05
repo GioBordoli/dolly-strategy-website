@@ -3,6 +3,33 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
+// Define types for our form fields
+type SelectFieldOption = {
+  value: string;
+  label: string;
+};
+
+type InputField = {
+  name: string;
+  label: string;
+  type: 'text' | 'email' | 'number';
+  placeholder: string;
+};
+
+type SelectField = {
+  name: string;
+  label: string;
+  type: 'select';
+  options: SelectFieldOption[];
+};
+
+type Field = InputField | SelectField;
+
+type Question = {
+  title: string;
+  fields: Field[];
+};
+
 export default function QuizForm() {
   const pathname = usePathname();
   const isItalian = pathname?.startsWith('/it');
@@ -24,7 +51,7 @@ export default function QuizForm() {
     potentialRevenue: 0
   });
   
-  const questions = isItalian ? [
+  const questions: Question[] = isItalian ? [
     {
       title: "Iniziamo con le tue informazioni",
       fields: [
@@ -396,7 +423,7 @@ export default function QuizForm() {
                 onChange={handleInputChange}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-green focus:border-primary-green"
               >
-                {field.options?.map(option => (
+                {field.options.map(option => (
                   <option key={option.value} value={option.value}>{option.label}</option>
                 ))}
               </select>
