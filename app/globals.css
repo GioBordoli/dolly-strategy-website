@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --logo-width: 80px;
+  --logo-height: 24px;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
@@ -12,25 +17,25 @@
   }
 
   h1 {
-    @apply text-4xl font-bold mb-4;
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold mb-4;
   }
 
   h2 {
-    @apply text-3xl font-bold mb-3;
+    @apply text-2xl sm:text-3xl font-bold mb-6;
   }
 
   h3 {
-    @apply text-2xl font-bold mb-2;
+    @apply text-xl sm:text-2xl font-bold mb-2;
   }
 
   p {
-    @apply mb-4;
+    @apply mb-4 text-sm sm:text-base;
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-block px-6 py-3 rounded-md font-medium transition duration-200;
+    @apply inline-block px-4 py-2 sm:px-6 sm:py-3 rounded-md font-medium transition duration-200 text-center w-full sm:w-auto;
   }
 
   .btn-primary {
@@ -43,5 +48,21 @@
 
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-4 sm:p-6 hover:shadow-lg transition duration-300;
+  }
+  
+  .section-title {
+    @apply text-2xl sm:text-3xl font-bold mb-6 sm:mb-10 text-center;
+  }
+  
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-primary-blue/50 to-primary-blue/30;
+  }
+  
+  .nav-link {
+    @apply hover:text-gray-300 transition text-sm sm:text-base;
   }
 } 

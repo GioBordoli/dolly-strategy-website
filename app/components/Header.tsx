@@ -31,8 +31,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-primary-blue text-white fixed w-full z-10 shadow-md">
-      <div className="container-custom mx-auto px-4">
+    <header className="bg-primary-blue text-white fixed w-full z-50 shadow-md">
+      <div className="container-custom mx-auto">
         <div className="flex justify-between items-center py-3">
           {/* Logo */}
           <Link href={isItalian ? '/it' : '/'} className="flex items-center">
@@ -47,12 +47,12 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`hover:text-gray-300 transition ${
+                className={`nav-link ${
                   pathname === item.href ? 'font-bold' : ''
                 }`}
               >
@@ -63,7 +63,7 @@ const Header = () => {
             {/* Language Switcher */}
             <button
               onClick={toggleLanguage}
-              className="hover:text-gray-300 transition"
+              className="nav-link"
             >
               {isItalian ? 'EN' : 'IT'}
             </button>
@@ -72,7 +72,8 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-white p-2"
+            aria-label="Toggle menu"
           >
             <svg
               className="w-6 h-6"
@@ -102,13 +103,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="md:hidden pb-4 animate-fadeIn">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`hover:text-gray-300 transition ${
+                  className={`nav-link ${
                     pathname === item.href ? 'font-bold' : ''
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
@@ -123,7 +124,7 @@ const Header = () => {
                   toggleLanguage();
                   setMobileMenuOpen(false);
                 }}
-                className="hover:text-gray-300 transition text-left"
+                className="nav-link text-left"
               >
                 {isItalian ? 'EN' : 'IT'}
               </button>
