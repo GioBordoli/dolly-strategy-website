@@ -12,16 +12,16 @@ export default function QuizPage() {
           {/* Hero Section */}
           <section className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-primary-blue">
-              The 5-Minute Automation Quiz: <span className="text-primary-green">Unlock Your Firm&apos;s Hidden Profits</span>
+              The 5-Minute Automation Quiz: <span className="text-primary-green">Unlock Your Company's Hidden Profits</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-700">
-              Find out how much your firm&apos;s losing to time sucks—and how automation hands it back.
+              Discover how much your company is losing to time waste and how automation can give it back.
             </p>
             
             {/* Trust Builder */}
             <div className="flex items-center justify-center mb-6">
               <p className="text-sm font-medium text-gray-600">
-                Built by Dolly Strategy—automation experts for small firms
+                Created by Dolly Strategy—automation experts for small businesses
               </p>
             </div>
           </section>
@@ -32,11 +32,11 @@ export default function QuizPage() {
             <div className="lg:col-span-3 flex flex-col justify-center">
               <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
                 <p className="text-lg md:text-xl mb-6 text-gray-800">
-                  Wasting hours on repetitive tasks? Spending too much on staff who could be replaced by a $10 tool? Take this 5-minute quiz to see exactly how much your firm&apos;s losing—and how automation can boost your bottom line.
+                  Are you wasting hours on repetitive tasks? Overpaying for staff that could be replaced by a $10 tool? Take this 5-minute quiz to see exactly how much your business is losing and how automation can boost your profits.
                 </p>
                 
                 <div className="mb-8">
-                  <h3 className="font-bold text-lg mb-4">In just 5 minutes, you&apos;ll discover:</h3>
+                  <h3 className="font-bold text-lg mb-4">In just 5 minutes, you'll discover:</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 h-6 w-6 bg-primary-green rounded-full flex items-center justify-center mr-3 mt-0.5">
@@ -44,7 +44,7 @@ export default function QuizPage() {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <span className="text-md md:text-lg font-medium">Takes just 5 minutes</span>
+                      <span className="text-md md:text-lg font-medium">Takes only 5 minutes</span>
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 h-6 w-6 bg-primary-green rounded-full flex items-center justify-center mr-3 mt-0.5">
@@ -52,7 +52,7 @@ export default function QuizPage() {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <span className="text-md md:text-lg font-medium">Get your custom profit report</span>
+                      <span className="text-md md:text-lg font-medium">Get your personalized profit report</span>
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 h-6 w-6 bg-primary-green rounded-full flex items-center justify-center mr-3 mt-0.5">
@@ -60,7 +60,7 @@ export default function QuizPage() {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <span className="text-md md:text-lg font-medium">No tech skills needed</span>
+                      <span className="text-md md:text-lg font-medium">No technical skills required</span>
                     </li>
                   </ul>
                 </div>
@@ -80,8 +80,8 @@ export default function QuizPage() {
                 {/* Social Proof */}
                 <div className="mt-8 pt-6 border-t border-gray-200">
                   <div className="bg-gray-50 p-4 rounded-lg italic text-gray-700">
-                    <p className="text-md">"The quiz showed we were wasting $3,240 per month on manual processes. Using Dolly's automation tools, we reclaimed 15 hours a week!"</p>
-                    <p className="mt-2 font-medium text-right">— Mark J., Small Accounting Firm</p>
+                    <p className="text-md">"The quiz showed us we were wasting $3,500 a month on manual processes. Using Dolly's automation tools, we now save 15 hours every week!"</p>
+                    <p className="mt-2 font-medium text-right">— John D., Small Accounting Firm</p>
                   </div>
                 </div>
               </div>
@@ -91,13 +91,13 @@ export default function QuizPage() {
             <div className="lg:col-span-2" id="quiz-form">
               <div className="sticky top-28">
                 <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border-2 border-primary-green">
-                  <h3 className="font-bold text-xl mb-6 text-center">Start Your 5-Minute Profit Audit</h3>
+                  <h3 className="font-bold text-xl mb-6 text-center">Start Your 5-Minute Profit Assessment</h3>
                   
                   <QuizForm />
                   
                   <div className="mt-6">
                     <p className="text-center text-sm text-gray-600">
-                      Your data is secure. We'll never share your information.
+                      Your data is safe. We never share your information.
                     </p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function QuizPage() {
               Don't leave money on the table
             </h3>
             <p className="text-lg mb-6">
-              The average small firm recovers 12+ hours per week with the right automation tools.
+              The average small business recovers 12+ hours per week with the right automation tools.
             </p>
             
             {/* Desktop Bottom CTA - hidden on mobile since we have one above */}

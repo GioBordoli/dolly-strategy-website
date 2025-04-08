@@ -120,11 +120,19 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p>
+          <p className="mb-4">
             {isItalian
               ? '© 2023 Dolly Strategy. Tutti i diritti riservati.'
               : '© 2023 Dolly Strategy. All rights reserved.'}
           </p>
+          <div className="flex justify-center space-x-4">
+            <Link
+              href={isItalian ? '/it/privacy' : '/privacy'}
+              className="text-sm text-gray-400 hover:text-white transition"
+            >
+              {isItalian ? 'Informativa sulla Privacy' : 'Privacy Policy'}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
