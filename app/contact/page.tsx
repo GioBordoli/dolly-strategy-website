@@ -1,100 +1,66 @@
+"use client";
+
 import EnglishLayout from '../layout-en';
+import Script from 'next/script';
+import { useEffect } from 'react';
+
+// Define types for Calendly
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: {
+        url: string;
+      }) => void;
+    };
+  }
+}
 
 export default function ContactPage() {
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/dollystrategy/30min'
+      });
+    }
+  };
+
   return (
     <EnglishLayout>
-      <div className="min-h-screen py-16">
+      <div className="min-h-screen py-12 lg:py-16">
         {/* Page Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Get in touch with our team to discuss how we can help transform your business with AI.
           </p>
         </div>
 
-        {/* Contact Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* Contact Form */}
-          <div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
-              <form>
-                <div className="mb-4">
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
-                    placeholder="How can we help you?"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary w-full"
-                >
-                  Submit
-                </button>
-                <p className="text-sm text-gray-500 mt-4">
-                  * This form is not functional yet. In a real project, it would be connected to a backend service.
-                </p>
-              </form>
-            </div>
-          </div>
+        {/* Main CTA Button */}
+        <div className="text-center mb-12">
+          <button 
+            onClick={openCalendly}
+            className="btn bg-primary-blue hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg shadow-lg transition transform hover:-translate-y-1"
+          >
+            Book a Free Call
+          </button>
+          <p className="mt-4 text-gray-600">
+            Schedule a free 30-minute strategy call with one of our experts
+          </p>
+        </div>
 
-          {/* Company Information */}
-          <div>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full">
-              <h2 className="text-2xl font-bold mb-6">Company Information</h2>
-              
-              <div className="mb-8">
+        {/* Company Information Card */}
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 className="text-2xl font-bold mb-8 text-center">Company Information</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
                 <h3 className="text-lg font-bold mb-2">Address</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 mb-6">
                   123 AI Street, Tech District<br />
                   Milan, Italy
                 </p>
-              </div>
-              
-              <div className="mb-8">
-                <h3 className="text-lg font-bold mb-2">Contact</h3>
-                <p className="text-gray-700 mb-2">
-                  <strong>Email:</strong>{" "}
-                  <a href="mailto:info@dollystrategy.com" className="text-primary-blue hover:underline">
-                    info@dollystrategy.com
-                  </a>
-                </p>
-                <p className="text-gray-700">
-                  <strong>Phone:</strong>{" "}
-                  <a href="tel:+391234567890" className="text-primary-blue hover:underline">
-                    +39 123 456 7890
-                  </a>
-                </p>
-              </div>
-              
-              <div className="mb-8">
+                
                 <h3 className="text-lg font-bold mb-2">Business Hours</h3>
                 <p className="text-gray-700">
                   Monday - Friday: 9:00 AM - 6:00 PM<br />
@@ -102,8 +68,21 @@ export default function ContactPage() {
                 </p>
               </div>
               
-              {/* Social Media Placeholder */}
               <div>
+                <h3 className="text-lg font-bold mb-2">Contact</h3>
+                <p className="text-gray-700 mb-2">
+                  <strong>Email:</strong>{" "}
+                  <a href="mailto:info@dollystrategy.com" className="text-primary-blue hover:underline">
+                    info@dollystrategy.com
+                  </a>
+                </p>
+                <p className="text-gray-700 mb-6">
+                  <strong>Phone:</strong>{" "}
+                  <a href="tel:+391234567890" className="text-primary-blue hover:underline">
+                    +39 123 456 7890
+                  </a>
+                </p>
+                
                 <h3 className="text-lg font-bold mb-2">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a href="#" className="text-primary-blue hover:text-primary-green">
@@ -123,6 +102,16 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        
+        {/* Calendly Scripts */}
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="afterInteractive"
+        />
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
       </div>
     </EnglishLayout>
   );
