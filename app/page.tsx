@@ -23,17 +23,17 @@ export default function Home() {
         <div className="container-custom mx-auto z-10 relative">
           <SectionContainer className="text-center max-w-4xl mx-auto">
             <h1 className="text-white mb-8">
-              AI Solutions for Italian Businesses
+              AI Solutions for Small Businesses
             </h1>
             <p className="text-xl mb-10 text-white">
-              We help businesses leverage artificial intelligence to improve efficiency and drive growth
+              We help businesses leverage artificial intelligence to boost efficiency, drive growth, and stay competitive.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="btn bg-white text-primary-blue hover:bg-gray-100"
               >
-                Get Started
+                Book a Call
               </Link>
               <Link
                 href="/services"
