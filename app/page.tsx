@@ -65,124 +65,52 @@ const serviceCards = [
   }
 ];
 
-// Star field background component with parallax effect
-const StarField = () => {
-  const [stars, setStars] = useState<{x: number, y: number, z: number, size: number, opacity: number}[]>([]);
-  const mouseRef = useRef<{x: number, y: number}>({ x: 0, y: 0 });
+// Optimized background component that uses static images with subtle CSS animations
+const OptimizedBackground = () => {
+  const [isMobile, setIsMobile] = useState(false);
   
-  // Track mouse movement for parallax effect
+  // Check for mobile viewport on client-side
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      mouseRef.current = {
-        x: (e.clientX / window.innerWidth - 0.5) * 2,
-        y: (e.clientY / window.innerHeight - 0.5) * 2
-      };
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
     };
     
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    // Initial check
+    checkMobile();
+    
+    // Listen for window resize
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
-  
-  useEffect(() => {
-    // Create stars with varying distance (z-index)
-    const starCount = 300;
-    const newStars = [];
-    
-    for (let i = 0; i < starCount; i++) {
-      newStars.push({
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        z: Math.random(), // z value between 0 and 1 (distance factor)
-        size: Math.random() * 2 + 0.5,
-        opacity: Math.random() * 0.8 + 0.2
-      });
-    }
-    
-    setStars(newStars);
-    
-    // Animate stars for subtle movement
-    const animateStars = () => {
-      setStars(prev => 
-        prev.map(star => {
-          // Calculate parallax offset based on mouse position and star's z-depth
-          const parallaxX = mouseRef.current.x * 20 * star.z;
-          const parallaxY = mouseRef.current.y * 20 * star.z;
-          
-          return {
-            ...star,
-            x: ((star.x + parallaxX / 100) + 100) % 100,
-            y: ((star.y + parallaxY / 100) + 100) % 100,
-          };
-        })
-      );
-      
-      animationFrameId = requestAnimationFrame(animateStars);
-    };
-    
-    let animationFrameId = requestAnimationFrame(animateStars);
-    
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
-  
-  return (
-    <div className="fixed inset-0 z-0">
-      {stars.map((star, i) => {
-        // Larger z value = closer star = more movement
-        const twinkleAnimation = `twinkle ${2 + star.z * 3}s ease-in-out infinite ${Math.random() * 2}s`;
-        
-        return (
-          <div 
-            key={i}
-            className="absolute rounded-full bg-white"
-            style={{
-              left: `${star.x}%`,
-              top: `${star.y}%`,
-              width: `${star.size + star.z}px`,
-              height: `${star.size + star.z}px`,
-              opacity: star.opacity,
-              boxShadow: `0 0 ${(star.size + star.z) * 2}px rgba(255, 255, 255, ${star.opacity})`,
-              animation: Math.random() > 0.7 ? twinkleAnimation : 'none',
-              transform: `translateZ(${star.z * 100}px)`,
-              transition: 'transform 0.1s ease-out'
-            }}
-          />
-        );
-      })}
-    </div>
-  );
-};
-
-// Animated nebula clouds
-const Nebulas = () => {
-  const { scrollYProgress } = useScroll();
-  const translateY = useTransform(scrollYProgress, [0, 1], [0, -100]);
-  const translateX = useTransform(scrollYProgress, [0, 1], [0, 50]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 15]);
   
   return (
     <div className="fixed inset-0 z-0 overflow-hidden">
-      <motion.div 
-        className="absolute -top-1/2 right-0 w-full h-full opacity-20 pointer-events-none"
-        style={{ y: translateY, x: translateX, rotate }}
-      >
-        <div className="absolute top-0 right-0 w-2/3 h-2/3 rounded-full bg-gradient-radial from-primary-blue/30 to-transparent blur-3xl"></div>
-      </motion.div>
+      {/* Background Image - Different for mobile and desktop */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80"
+        style={{ 
+          backgroundImage: isMobile 
+            ? 'url("/images/nebula-mobile.jpg")' 
+            : 'url("/images/nebula-desktop.jpg")'
+        }}
+      />
       
-      <motion.div 
-        className="absolute bottom-0 left-0 w-full h-full opacity-15 pointer-events-none"
-        style={{ y: useTransform(scrollYProgress, [0, 1], [0, 150]), rotate: useTransform(scrollYProgress, [0, 1], [0, -10]) }}
-      >
-        <div className="absolute bottom-0 left-0 w-2/3 h-2/3 rounded-full bg-gradient-radial from-primary-green/30 to-transparent blur-3xl"></div>
-      </motion.div>
+      {/* Overlay to adjust image darkness */}
+      <div className="absolute inset-0 bg-[#0f1626]/40"></div>
       
-      <motion.div 
-        className="absolute top-1/4 left-1/4 w-1/2 h-1/2 opacity-20 pointer-events-none"
-        style={{ y: useTransform(scrollYProgress, [0, 1], [0, -70]), rotate: useTransform(scrollYProgress, [0, 1], [0, 20]) }}
-      >
-        <div className="absolute w-full h-full rounded-full bg-gradient-radial from-purple-500/20 to-transparent blur-3xl"></div>
-      </motion.div>
+      {/* Subtle animated elements - only on desktop */}
+      {!isMobile && (
+        <>
+          {/* Blue nebula glow */}
+          <div className="nebula-glow absolute top-1/4 right-1/4 w-1/3 h-1/3 rounded-full bg-primary-blue/20 blur-3xl"></div>
+          
+          {/* Green nebula glow */}
+          <div className="nebula-glow-alt absolute bottom-1/4 left-1/4 w-1/3 h-1/3 rounded-full bg-primary-green/20 blur-3xl"></div>
+          
+          {/* Purple accent */}
+          <div className="nebula-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 rounded-full bg-purple-500/10 blur-3xl"></div>
+        </>
+      )}
     </div>
   );
 };
@@ -350,8 +278,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-[#0f1626] text-white overflow-hidden">
       {/* Background elements */}
-      <StarField />
-      <Nebulas />
+      <OptimizedBackground />
       
       {/* Navigation Menu */}
       <NavMenu />
@@ -1064,6 +991,31 @@ export default function Home() {
         
         .bg-gradient-radial {
           background-image: radial-gradient(var(--tw-gradient-stops));
+        }
+        
+        /* Subtle animations for the nebula elements */
+        .nebula-glow {
+          animation: glow 8s ease-in-out infinite alternate;
+        }
+        
+        .nebula-glow-alt {
+          animation: glow 12s ease-in-out infinite alternate-reverse;
+        }
+        
+        .nebula-pulse {
+          animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+          0% { opacity: 0.1; transform: scale(1); }
+          50% { opacity: 0.3; transform: scale(1.2); }
+          100% { opacity: 0.1; transform: scale(1); }
+        }
+        
+        @keyframes pulse {
+          0% { opacity: 0.1; transform: scale(1) translate(-50%, -50%); }
+          50% { opacity: 0.25; transform: scale(1.3) translate(-40%, -40%); }
+          100% { opacity: 0.1; transform: scale(1) translate(-50%, -50%); }
         }
         
         @keyframes twinkle {
