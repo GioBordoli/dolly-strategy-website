@@ -17,7 +17,7 @@ export default function TeamMemberCard({
 }: TeamMemberCardProps) {
   if (featured) {
     return (
-      <div className="bg-white rounded-lg shadow-md overflow-hidden md:col-span-2 lg:col-span-4">
+      <div className="bg-[#0f1626]/70 backdrop-blur-md border border-[#4facfe]/20 rounded-lg shadow-lg overflow-hidden md:col-span-2 lg:col-span-4">
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="relative h-64 lg:h-auto">
             <Image 
@@ -26,11 +26,12 @@ export default function TeamMemberCard({
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f1626]/80 to-transparent"></div>
           </div>
           <div className="p-6 lg:col-span-2 flex flex-col justify-center">
-            <h3 className="text-xl font-bold mb-1">{name}</h3>
-            <p className="text-primary-blue font-semibold mb-3">{role}</p>
-            <p className="text-gray-600">{description}</p>
+            <h3 className="text-xl font-bold mb-1 text-white">{name}</h3>
+            <p className="text-primary-green font-semibold mb-3">{role}</p>
+            <p className="text-gray-300">{description}</p>
           </div>
         </div>
       </div>
@@ -38,19 +39,20 @@ export default function TeamMemberCard({
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <div className="relative h-48 sm:h-64">
+    <div className="bg-[#0f1626]/70 backdrop-blur-md border border-[#4facfe]/20 rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+      <div className="relative h-60">
         <Image 
           src={imageSrc} 
           alt={name} 
           fill
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1626]/80 to-transparent"></div>
       </div>
-      <div className="p-4 sm:p-6">
-        <h3 className="text-lg sm:text-xl font-bold mb-1">{name}</h3>
-        <p className="text-primary-blue font-semibold mb-2 sm:mb-3 text-sm sm:text-base">{role}</p>
-        <p className="text-gray-600 text-sm sm:text-base">{description}</p>
+      <div className="p-6 flex-grow flex flex-col">
+        <h3 className="text-lg font-bold mb-1 text-white">{name}</h3>
+        <p className="text-primary-green font-semibold mb-3">{role}</p>
+        <p className="text-gray-300">{description}</p>
       </div>
     </div>
   );
