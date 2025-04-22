@@ -1,5 +1,3 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,9 +12,7 @@ export default function ItalianLayout({
 }) {
   return (
     <>
-      <Header />
-      <main className="pt-24 flex-grow">{children}</main>
-      <Footer />
+      {children}
     </>
   );
 } 
