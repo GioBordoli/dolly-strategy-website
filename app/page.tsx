@@ -12,17 +12,17 @@ import Script from 'next/script';
 // Service cards data
 const serviceCards = [
   {
-    title: "Automation",
+    title: "Consulting",
     color: "#1a365d", // primary-blue
-    image: "/images/services/automation.jpg",
-    description: "Streamline your business processes with our AI automation solutions. Save time and resources while increasing productivity.",
+    image: "/images/services/consulting.jpg",
+    description: "Our expert consultants will analyze your business needs and provide tailored AI solutions to address your specific challenges.",
     benefits: [
-      "Reduce manual workload and operational costs",
-      "Minimize human error and increase accuracy",
-      "Free up valuable employee time for strategic tasks",
-      "Scale your operations efficiently"
+      "Thorough assessment of your current operations",
+      "Identification of opportunities for AI integration",
+      "Development of a strategic implementation plan",
+      "ROI analysis and performance metrics"
     ],
-    quote: "Our automation solutions are custom-built to address your unique workflow challenges."
+    quote: "We translate complex AI concepts into practical business applications that deliver measurable results."
   },
   {
     title: "Training",
@@ -38,17 +38,17 @@ const serviceCards = [
     quote: "Empower your team with the knowledge and skills needed to excel in the AI-driven business landscape."
   },
   {
-    title: "Consulting",
+    title: "Automation",
     color: "#1a365d", // primary-blue
-    image: "/images/services/consulting.jpg",
-    description: "Our expert consultants will analyze your business needs and provide tailored AI solutions to address your specific challenges.",
+    image: "/images/services/automation.jpg",
+    description: "Streamline your business processes with our AI automation solutions. Save time and resources while increasing productivity.",
     benefits: [
-      "Thorough assessment of your current operations",
-      "Identification of opportunities for AI integration",
-      "Development of a strategic implementation plan",
-      "ROI analysis and performance metrics"
+      "Reduce manual workload and operational costs",
+      "Minimize human error and increase accuracy",
+      "Free up valuable employee time for strategic tasks",
+      "Scale your operations efficiently"
     ],
-    quote: "We translate complex AI concepts into practical business applications that deliver measurable results."
+    quote: "Our automation solutions are custom-built to address your unique workflow challenges."
   },
   {
     title: "Custom Solutions",

@@ -3,6 +3,15 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
+// Define types for Calendly
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
 // Define types for our form fields
 type SelectFieldOption = {
   value: string;
@@ -361,6 +370,15 @@ export default function QuizForm() {
     return `${currencySymbol}${amount.toLocaleString()}`;
   };
   
+  // Add Calendly open function
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/dollystrategy/30min'
+      });
+    }
+  };
+  
   if (submitted) {
     return (
       <div className="text-center p-6 bg-green-50 rounded-lg">
@@ -379,6 +397,7 @@ export default function QuizForm() {
           {t.sentReport} <span className="font-medium">{formData.email}</span> {t.withRecommendations} <span className="text-green-600 font-bold">{formatCurrency(calculatedResults.potentialSavings)}{t.perYear}</span> {t.andAdd} <span className="text-blue-600 font-bold">{formatCurrency(calculatedResults.potentialRevenue)}</span> {t.inNewRevenue}.
         </p>
         <button 
+          onClick={openCalendly}
           className="w-full py-3 px-6 bg-primary-blue text-white font-bold rounded-lg shadow-md hover:bg-primary-blue/90 transition"
         >
           {t.bookCall}

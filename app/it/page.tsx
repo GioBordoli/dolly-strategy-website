@@ -12,17 +12,17 @@ import { Inter } from 'next/font/google';
 // Dati delle card dei servizi
 const serviceCards = [
   {
-    title: "Automazione",
+    title: "Consulenza",
     color: "#1a365d", // primary-blue
-    image: "/images/services/automation.jpg",
-    description: "Ottimizza i processi aziendali con le nostre soluzioni di automazione AI. Risparmia tempo e risorse aumentando la produttività.",
+    image: "/images/services/consulting.jpg",
+    description: "I nostri consulenti esperti analizzeranno le esigenze della tua azienda e forniranno soluzioni AI su misura per affrontare le tue sfide specifiche.",
     benefits: [
-      "Riduzione del carico di lavoro manuale e dei costi operativi",
-      "Minimizzazione degli errori umani e aumento della precisione",
-      "Liberazione di tempo prezioso dei dipendenti per compiti strategici",
-      "Scalabilità efficiente delle operazioni"
+      "Valutazione approfondita delle tue operazioni attuali",
+      "Identificazione delle opportunità di integrazione dell'AI",
+      "Sviluppo di un piano strategico di implementazione",
+      "Analisi del ROI e metriche di performance"
     ],
-    quote: "Le nostre soluzioni di automazione sono create su misura per affrontare le tue specifiche sfide di workflow."
+    quote: "Traduciamo concetti AI complessi in applicazioni aziendali pratiche che offrono risultati misurabili."
   },
   {
     title: "Formazione",
@@ -38,17 +38,17 @@ const serviceCards = [
     quote: "Potenzia il tuo team con le conoscenze e le competenze necessarie per eccellere nel panorama aziendale guidato dall'AI."
   },
   {
-    title: "Consulenza",
+    title: "Automazione",
     color: "#1a365d", // primary-blue
-    image: "/images/services/consulting.jpg",
-    description: "I nostri consulenti esperti analizzeranno le esigenze della tua azienda e forniranno soluzioni AI su misura per affrontare le tue sfide specifiche.",
+    image: "/images/services/automation.jpg",
+    description: "Ottimizza i processi aziendali con le nostre soluzioni di automazione AI. Risparmia tempo e risorse aumentando la produttività.",
     benefits: [
-      "Valutazione approfondita delle tue operazioni attuali",
-      "Identificazione delle opportunità di integrazione dell'AI",
-      "Sviluppo di un piano strategico di implementazione",
-      "Analisi del ROI e metriche di performance"
+      "Riduzione del carico di lavoro manuale e dei costi operativi",
+      "Minimizzazione degli errori umani e aumento della precisione",
+      "Liberazione di tempo prezioso dei dipendenti per compiti strategici",
+      "Scalabilità efficiente delle operazioni"
     ],
-    quote: "Traduciamo concetti AI complessi in applicazioni aziendali pratiche che offrono risultati misurabili."
+    quote: "Le nostre soluzioni di automazione sono create su misura per affrontare le tue specifiche sfide di workflow."
   },
   {
     title: "Soluzioni Personalizzate",

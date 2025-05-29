@@ -16,7 +16,7 @@ export default function QuizPage() {
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-primary-blue">
-            Il Quiz di 5 Minuti sull'Automazione: <span className="text-primary-green">Sblocca i Profitti Nascosti della Tua Azienda</span>
+            Il Quiz di 5 Minuti sull'Automazione: <span className="text-primary-green">Sblocca i Profitti Sprecati della Tua Azienda</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-700">
             Scopri quanto la tua azienda sta perdendo a causa di sprechi di tempo e come l'automazione può restituirtelo.
@@ -25,7 +25,7 @@ export default function QuizPage() {
           {/* Trust Builder */}
           <div className="flex items-center justify-center mb-6">
             <p className="text-sm font-medium text-gray-600">
-              Creato da Dolly Strategy—esperti di automazione per piccole imprese
+              Creato da Dolly Strategy—esperti di automazione per contabili, legali e commercialisti.
             </p>
           </div>
         </section>
@@ -36,7 +36,7 @@ export default function QuizPage() {
           <div className="lg:col-span-3 flex flex-col justify-center">
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg">
               <p className="text-lg md:text-xl mb-6 text-gray-800">
-                Stai sprecando ore in attività ripetitive? Pagando troppo per personale che potrebbe essere sostituito da uno strumento da 10€? Fai questo quiz di 5 minuti per vedere esattamente quanto la tua azienda sta perdendo e come l'automazione può aumentare i tuoi profitti.
+                Stai sprecando ore in attività ripetitive? Pagando troppo per personale che potrebbe essere reso 10 volte più efficiente da un software? Fai questo quiz di 5 minuti per vedere esattamente quanto la tua azienda sta perdendo e come l'automazione può aumentare i tuoi profitti.
               </p>
               
               <div className="mb-8">
@@ -48,7 +48,7 @@ export default function QuizPage() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-md md:text-lg font-medium">Richiede solo 5 minuti</span>
+                    <span className="text-md md:text-lg font-medium">Quanto stai perdendo a causa di processi inefficienti</span>
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-6 w-6 bg-primary-green rounded-full flex items-center justify-center mr-3 mt-0.5">
@@ -56,7 +56,7 @@ export default function QuizPage() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-md md:text-lg font-medium">Ottieni il tuo rapporto personalizzato sui profitti</span>
+                    <span className="text-md md:text-lg font-medium">Quanto piu' pofittevoli sono i tuoi competitors che implementano l'automazione</span>
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 h-6 w-6 bg-primary-green rounded-full flex items-center justify-center mr-3 mt-0.5">
@@ -64,7 +64,7 @@ export default function QuizPage() {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-md md:text-lg font-medium">Non sono richieste competenze tecniche</span>
+                    <span className="text-md md:text-lg font-medium">Quante centinaia o migliaia di euro di stipendisprecate per processi manuali ogni mese</span>
                   </li>
                 </ul>
               </div>
@@ -85,7 +85,7 @@ export default function QuizPage() {
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <div className="bg-gray-50 p-4 rounded-lg italic text-gray-700">
                   <p className="text-md">"Il quiz ci ha mostrato che stavamo sprecando €3.500 al mese in processi manuali. Utilizzando gli strumenti di automazione di Dolly, ora risparmiamo 15 ore ogni settimana!"</p>
-                  <p className="mt-2 font-medium text-right">— Giovanni D., Piccolo Studio di Contabilità</p>
+                  <p className="mt-2 font-medium text-right">— Riccardo G. Buzzi, Titolare di Buzzi Group</p>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function QuizPage() {
                 
                 <div className="mt-6">
                   <p className="text-center text-sm text-gray-600">
-                    I tuoi dati sono al sicuro. Non condividiamo mai le tue informazioni.
+                    I tuoi dati sono al sicuro. Non salviamo mai le tue informazioni.
                   </p>
                 </div>
               </div>
@@ -116,11 +116,11 @@ export default function QuizPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-green mr-2">▶</span>
-                    <span>I tuoi potenziali risparmi attraverso l'automazione</span>
+                    <span>I tuoi potenziali profitti attraverso l'automazione</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-green mr-2">▶</span>
-                    <span>Opportunità di crescita del fatturato personalizzate</span>
+                    <span>Opportunità di crescita del fatturato</span>
                   </li>
                 </ul>
               </div>
@@ -131,10 +131,10 @@ export default function QuizPage() {
         {/* Bottom CTA */}
         <div className="mt-16 text-center max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Non lasciare soldi sul tavolo
+            I soldi non crescono sugli alberi. Non li sprecare!
           </h3>
           <p className="text-lg mb-6">
-            La piccola impresa media recupera più di 12 ore alla settimana con gli strumenti di automazione giusti.
+            Il piccolo studio di contabilità recupera in media più di 12 ore alla settimana con gli strumenti di automazione giusti.
           </p>
           
           {/* Desktop Bottom CTA - hidden on mobile since we have one above */}
@@ -149,6 +149,17 @@ export default function QuizPage() {
           </p>
         </div>
       </div>
+      
+      {/* Calendly Scripts */}
+      <script 
+        type="text/javascript" 
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      />
+      <link 
+        href="https://assets.calendly.com/assets/external/widget.css" 
+        rel="stylesheet"
+      />
     </div>
   );
 } 
