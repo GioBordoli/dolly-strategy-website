@@ -224,14 +224,6 @@ const NavMenu = () => {
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => scrollToSection('team')}
-                className="text-white hover:text-primary-green w-full text-left py-2 px-4 rounded hover:bg-white/10 transition-colors"
-              >
-                Team
-              </button>
-            </li>
-            <li>
               <Link 
                 href="/quiz"
                 className="text-white hover:text-primary-green w-full text-left block py-2 px-4 rounded hover:bg-white/10 transition-colors"
@@ -252,10 +244,7 @@ const NavMenu = () => {
                 href="/it"
                 className="text-white hover:text-primary-green w-full text-left block py-2 px-4 rounded hover:bg-white/10 transition-colors flex items-center"
               >
-                <span>Italiano</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
+                <span>Italiano 🇮🇹</span>  
               </Link>
             </li>
           </ul>
@@ -329,17 +318,9 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={openCalendly}
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-white to-gray-300 text-primary-blue font-bold text-lg hover:shadow-glow-white transition-all duration-300"
+                className="px-8 py-4 rounded-full bg-gradient-to-r from-primary-blue to-primary-green text-white font-bold text-lg hover:shadow-glow transition-all duration-300"
               >
                 Book a Free Strategy Call
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 py-4 rounded-full bg-transparent border-2 border-white text-white font-bold text-lg hover:bg-white/10 transition-all duration-300"
-              >
-                Our Services
               </motion.button>
             </motion.div>
           </motion.div>
@@ -577,115 +558,7 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Team Section */}
-      <section id="team" className="relative py-24">
-        <div className="container-custom mx-auto">
-          {/* Section Header */}
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
-              Our Team
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Dolly Strategy is powered by a diverse team of experts in artificial intelligence, data science, business strategy, and industry-specific domains.
-            </p>
-          </motion.div>
 
-          {/* Team Members */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/giorgio.jpg"
-                name="Giorgio Bordoli"
-                role="CEO & Founder"
-                description="Visionary entrepreneur with expertise in AI implementation and business transformation. Giorgio leads our strategic direction and client partnerships."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/daniel.jpg"
-                name="Daniel Maurot"
-                role="Chief Financial Officer"
-                description="Financial strategist with deep experience in technology investments. Daniel ensures our growth is sustainable while maximizing value for our clients."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/marissa.jpg"
-                name="Marissa"
-                role="Lead Operations Officer"
-                description="Operations expert who orchestrates our project delivery with precision and excellence. Marissa ensures seamless execution of all client solutions."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/laura.jpg"
-                name="Laura"
-                role="Executive Secretary"
-                description="Communication specialist who coordinates our executive activities and client relationships. Laura ensures our operations run smoothly and efficiently."
-              />
-            </motion.div>
-          </div>
-
-          {/* Team CTA */}
-          <motion.div 
-            className="text-center mt-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-xl text-gray-300 mb-8">
-              Want to learn how our experts can help your business?
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={openCalendly}
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-primary-blue to-primary-green text-white font-bold text-lg hover:shadow-glow transition-all duration-300"
-            >
-              Book a Free Strategy Call
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
-      
       {/* Replace Quiz Section with a CTA to the quiz page */}
       <section id="quiz-cta" className="relative py-24">
         <div className="container-custom mx-auto">
@@ -923,14 +796,6 @@ export default function Home() {
                     className="text-gray-300 hover:text-primary-green transition-colors"
                   >
                     About
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-300 hover:text-primary-green transition-colors"
-                  >
-                    Team
                   </button>
                 </li>
                 <li>

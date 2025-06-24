@@ -2,25 +2,17 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import LanguageToggle from './LanguageToggle';
 
-// This would normally use the language context, but we'll keep it simple for now
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
   
-  // Simplified language detection - in a real app, we'd use the language context
+  // Simplified language detection
   const currentLang = pathname?.startsWith('/it') ? 'it' : 'en';
   const isItalian = currentLang === 'it';
-  
-  const toggleLanguage = () => {
-    const newPath = isItalian 
-      ? pathname?.replace('/it', '') 
-      : `/it${pathname || ''}`;
-    router.push(newPath || '/');
-  };
 
   const navItems = [
     { name: isItalian ? 'Home' : 'Home', href: isItalian ? '/it' : '/' },
@@ -62,12 +54,7 @@ const Header = () => {
             ))}
             
             {/* Language Switcher */}
-            <button
-              onClick={toggleLanguage}
-              className="nav-link"
-            >
-              {isItalian ? 'EN' : 'IT'}
-            </button>
+            <LanguageToggle className="ml-4" />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -120,15 +107,9 @@ const Header = () => {
               ))}
               
               {/* Language Switcher */}
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  setMobileMenuOpen(false);
-                }}
-                className="nav-link text-left"
-              >
-                {isItalian ? 'EN' : 'IT'}
-              </button>
+              <div onClick={() => setMobileMenuOpen(false)}>
+                <LanguageToggle className="w-full text-left" />
+              </div>
             </div>
           </div>
         )}

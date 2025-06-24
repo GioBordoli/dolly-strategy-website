@@ -45,8 +45,6 @@ export default function QuizForm() {
   
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
     firmType: '',
     employeeCount: '',
     manualHours: '',
@@ -61,13 +59,6 @@ export default function QuizForm() {
   });
   
   const questions: Question[] = isItalian ? [
-    {
-      title: "Iniziamo con le tue informazioni",
-      fields: [
-        { name: 'name', label: 'Nome Completo', type: 'text', placeholder: 'Il tuo nome' },
-        { name: 'email', label: 'Email di Lavoro', type: 'email', placeholder: 'tu@esempio.com' }
-      ]
-    },
     {
       title: "Parlaci della tua azienda",
       fields: [
@@ -148,13 +139,6 @@ export default function QuizForm() {
       ]
     }
   ] : [
-    {
-      title: "Let's start with your information",
-      fields: [
-        { name: 'name', label: 'Full Name', type: 'text', placeholder: 'Your name' },
-        { name: 'email', label: 'Work Email', type: 'email', placeholder: 'you@example.com' }
-      ]
-    },
     {
       title: "Tell us about your firm",
       fields: [
@@ -246,8 +230,7 @@ export default function QuizForm() {
       getResults: "Get Results",
       resultsReady: "Your Results Are Ready!",
       basedOnInput: "Based on your input, your firm is losing approximately",
-      sentReport: "We've sent your detailed report to",
-      withRecommendations: "with personalized automation recommendations that could save you",
+      withRecommendations: "Our personalized automation recommendations could save you",
       andAdd: "and add",
       inNewRevenue: "in new revenue",
       bookCall: "Book a Free Strategy Call",
@@ -263,8 +246,7 @@ export default function QuizForm() {
       getResults: "Ottieni Risultati",
       resultsReady: "I Tuoi Risultati Sono Pronti!",
       basedOnInput: "In base ai tuoi dati, la tua azienda sta perdendo circa",
-      sentReport: "Abbiamo inviato il tuo report dettagliato a",
-      withRecommendations: "con raccomandazioni di automazione personalizzate che potrebbero farti risparmiare",
+      withRecommendations: "Le nostre raccomandazioni di automazione personalizzate potrebbero farti risparmiare",
       andAdd: "e aggiungere",
       inNewRevenue: "di nuovi ricavi",
       bookCall: "Prenota una Chiamata Strategica Gratuita",
@@ -394,7 +376,7 @@ export default function QuizForm() {
           {t.basedOnInput} <span className="text-red-600 font-bold">{formatCurrency(calculatedResults.annualLoss)}{t.perYear}</span> {isItalian ? 'a causa di processi manuali' : 'to manual processes'}.
         </p>
         <p className="mb-6">
-          {t.sentReport} <span className="font-medium">{formData.email}</span> {t.withRecommendations} <span className="text-green-600 font-bold">{formatCurrency(calculatedResults.potentialSavings)}{t.perYear}</span> {t.andAdd} <span className="text-blue-600 font-bold">{formatCurrency(calculatedResults.potentialRevenue)}</span> {t.inNewRevenue}.
+          {t.withRecommendations} <span className="text-green-600 font-bold">{formatCurrency(calculatedResults.potentialSavings)}{t.perYear}</span> {t.andAdd} <span className="text-blue-600 font-bold">{formatCurrency(calculatedResults.potentialRevenue)}</span> {t.inNewRevenue}.
         </p>
         <button 
           onClick={openCalendly}

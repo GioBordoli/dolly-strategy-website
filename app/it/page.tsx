@@ -224,14 +224,6 @@ const NavMenu = () => {
               </button>
             </li>
             <li>
-              <button 
-                onClick={() => scrollToSection('team')}
-                className="text-white hover:text-primary-green w-full text-left py-2 px-4 rounded hover:bg-white/10 transition-colors"
-              >
-                Team
-              </button>
-            </li>
-            <li>
               <Link 
                 href="/it/quiz"
                 className="text-white hover:text-primary-green w-full text-left block py-2 px-4 rounded hover:bg-white/10 transition-colors"
@@ -252,10 +244,8 @@ const NavMenu = () => {
                 href="/"
                 className="text-white hover:text-primary-green w-full text-left block py-2 px-4 rounded hover:bg-white/10 transition-colors flex items-center"
               >
-                <span>English</span>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
+                <span>English 🇬🇧</span>
+                
               </Link>
             </li>
           </ul>
@@ -329,7 +319,7 @@ export default function HomePageItalian() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={openCalendly}
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-white to-gray-300 text-primary-blue font-bold text-lg hover:shadow-glow-white transition-all duration-300"
+                className="px-8 py-4 rounded-full bg-gradient-to-r from-primary-blue to-primary-green text-white font-bold text-lg hover:shadow-glow transition-all duration-300"
               >
                 Fissa una Chiamata
               </motion.button>
@@ -569,115 +559,7 @@ export default function HomePageItalian() {
         </div>
       </section>
       
-      {/* Sezione Team */}
-      <section id="team" className="relative py-24">
-        <div className="container-custom mx-auto">
-          {/* Intestazione Sezione */}
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
-              Il Nostro Team
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Dolly Strategy è supportata da un team diversificato di esperti in intelligenza artificiale, data science, strategia aziendale e domini specifici del settore.
-            </p>
-          </motion.div>
 
-          {/* Membri del Team */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/giorgio.jpg"
-                name="Giorgio Bordoli"
-                role="CEO & Fondatore"
-                description="Imprenditore visionario con competenze nell'implementazione dell'AI e nella trasformazione aziendale. Giorgio guida la nostra direzione strategica e le partnership con i clienti."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/daniel.jpg"
-                name="Daniel Maurot"
-                role="Direttore Finanziario"
-                description="Stratega finanziario con profonda esperienza negli investimenti tecnologici. Daniel assicura che la nostra crescita sia sostenibile massimizzando il valore per i nostri clienti."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/marissa.jpg"
-                name="Marissa"
-                role="Responsabile Operativo"
-                description="Esperta operativa che orchestra la nostra consegna dei progetti con precisione ed eccellenza. Marissa garantisce un'esecuzione impeccabile di tutte le soluzioni per i clienti."
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="h-full"
-            >
-              <TeamMemberCard 
-                imageSrc="/images/team/laura.jpg"
-                name="Laura"
-                role="Segretaria Esecutiva"
-                description="Specialista della comunicazione che coordina le nostre attività esecutive e le relazioni con i clienti. Laura assicura che le nostre operazioni si svolgano senza intoppi e in modo efficiente."
-              />
-            </motion.div>
-          </div>
-
-          {/* CTA Team */}
-          <motion.div 
-            className="text-center mt-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-xl text-gray-300 mb-8">
-              Vuoi scoprire come i nostri esperti possono aiutare la tua azienda?
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={openCalendly}
-              className="px-8 py-4 rounded-full bg-gradient-to-r from-primary-blue to-primary-green text-white font-bold text-lg hover:shadow-glow transition-all duration-300"
-            >
-              Fissa una Chiamata
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
-      
       {/* CTA Sezione Quiz */}
       <section id="quiz-cta" className="relative py-24">
         <div className="container-custom mx-auto">
@@ -915,14 +797,6 @@ export default function HomePageItalian() {
                     className="text-gray-300 hover:text-primary-green transition-colors"
                   >
                     Chi Siamo
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-300 hover:text-primary-green transition-colors"
-                  >
-                    Team
                   </button>
                 </li>
                 <li>
