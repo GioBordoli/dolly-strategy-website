@@ -301,7 +301,7 @@ export default function Home() {
               AI Solutions for Small Businesses
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-10 text-gray-300"
+              className="text-xl md:text-2xl mb-10 text-gray-100"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -341,7 +341,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Our Services
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto">
               We offer a range of AI-powered services to help your business thrive.
             </p>
           </motion.div>
@@ -354,7 +354,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg text-gray-300 mb-8">
+            <p className="text-lg text-gray-100 mb-8">
               At Dolly Strategy, we understand that every business is unique, with its own set of challenges and opportunities. Our services are designed to adapt to your specific needs, providing tailored AI solutions that drive real results.
             </p>
           </motion.div>
@@ -374,7 +374,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-100 mb-8">
               Ready to see how our AI services can transform your business?
             </p>
             <motion.button
@@ -403,7 +403,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               About Dolly Strategy
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto">
               Get to know our company and mission to bring AI to Italian businesses.
             </p>
           </motion.div>
@@ -432,13 +432,13 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <p className="text-lg text-gray-300 mb-4">
+                <p className="text-lg text-gray-100 mb-4">
                   At Dolly Strategy, we are committed to democratizing AI technology for businesses of all sizes in Italy. Our mission is to bridge the gap between cutting-edge AI innovations and practical business applications.
                 </p>
-                <p className="text-lg text-gray-300 mb-4">
+                <p className="text-lg text-gray-100 mb-4">
                   We believe that artificial intelligence should be accessible, understandable, and valuable for every business, regardless of their size or industry. Our goal is to help Italian companies leverage AI to increase efficiency, reduce costs, and gain a competitive edge in the global market.
                 </p>
-                <p className="text-lg text-gray-300">
+                <p className="text-lg text-gray-100">
                   Through our services, we aim to transform the Italian business landscape by introducing AI solutions that are both innovative and practical, focusing on real-world applications that deliver measurable results.
                 </p>
               </motion.div>
@@ -492,7 +492,7 @@ export default function Home() {
                 {/* Text directly below image */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Innovation</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     We continuously explore and adopt cutting-edge AI technologies to provide the most advanced solutions for our clients.
                   </p>
                 </div>
@@ -520,7 +520,7 @@ export default function Home() {
                 {/* Text directly below image */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Collaboration</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     We believe in working closely with our clients to understand their unique needs and develop tailored solutions that address their specific challenges.
                   </p>
                 </div>
@@ -548,7 +548,7 @@ export default function Home() {
                 {/* Text directly below image */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Privacy</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     We are committed to protecting your data and ensuring privacy standards are maintained throughout all our AI implementations and business processes.
                   </p>
                 </div>
@@ -572,7 +572,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Discover Your AI Profit Potential
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto mb-10">
               Take our interactive quiz to see how much revenue you could generate and costs you could save by implementing AI solutions in your business.
             </p>
             
@@ -605,7 +605,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Get in Touch
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto mb-8">
               Ready to transform your business with AI? Contact us today!
             </p>
             
@@ -625,7 +625,7 @@ export default function Home() {
               >
                 Book a Free Strategy Call
               </motion.button>
-              <p className="mt-4 text-gray-300">
+              <p className="mt-4 text-gray-100">
                 Schedule a free 30-minute strategy call with one of our AI experts
               </p>
             </motion.div>

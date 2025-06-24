@@ -302,7 +302,7 @@ export default function HomePageItalian() {
               Soluzioni AI per le Piccole Imprese
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-8 text-gray-300"
+              className="text-xl md:text-2xl mb-8 text-gray-100"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -342,7 +342,7 @@ export default function HomePageItalian() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               I Nostri Servizi
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto">
               Offriamo una gamma di servizi basati sull'AI per aiutare la tua azienda a prosperare.
             </p>
           </motion.div>
@@ -355,7 +355,7 @@ export default function HomePageItalian() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg text-gray-300 mb-6">
+            <p className="text-lg text-gray-100 mb-6">
               In Dolly Strategy, comprendiamo che ogni azienda è unica, con le proprie sfide e opportunità. I nostri servizi sono progettati per adattarsi alle tue esigenze specifiche, fornendo soluzioni AI su misura che portano risultati concreti.
             </p>
           </motion.div>
@@ -375,7 +375,7 @@ export default function HomePageItalian() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-100 mb-8">
               Pronto a scoprire come i nostri servizi AI possono trasformare la tua azienda?
             </p>
             <motion.button
@@ -404,7 +404,7 @@ export default function HomePageItalian() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Chi è Dolly Strategy
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto">
               Conosci la nostra azienda e la nostra missione di portare l'AI alle imprese italiane.
             </p>
           </motion.div>
@@ -433,13 +433,13 @@ export default function HomePageItalian() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <p className="text-lg text-gray-300 mb-4">
+                <p className="text-lg text-gray-100 mb-4">
                   In Dolly Strategy, ci impegniamo a democratizzare la tecnologia AI per le aziende di tutte le dimensioni in Italia. La nostra missione è colmare il divario tra le innovazioni all'avanguardia dell'AI e le applicazioni aziendali pratiche.
                 </p>
-                <p className="text-lg text-gray-300 mb-4">
+                <p className="text-lg text-gray-100 mb-4">
                   Crediamo che l'intelligenza artificiale debba essere accessibile, comprensibile e preziosa per ogni azienda, indipendentemente dalle dimensioni o dal settore. Il nostro obiettivo è aiutare le aziende italiane a sfruttare l'AI per aumentare l'efficienza, ridurre i costi e ottenere un vantaggio competitivo nel mercato globale.
                 </p>
-                <p className="text-lg text-gray-300">
+                <p className="text-lg text-gray-100">
                   Attraverso i nostri servizi, miriamo a trasformare il panorama aziendale italiano introducendo soluzioni AI che siano sia innovative che pratiche, concentrandoci su applicazioni nel mondo reale che offrono risultati misurabili.
                 </p>
               </motion.div>
@@ -493,7 +493,7 @@ export default function HomePageItalian() {
                 {/* Testo direttamente sotto l'immagine */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Innovazione</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     Esploriamo e adottiamo continuamente tecnologie AI all'avanguardia per fornire le soluzioni più avanzate ai nostri clienti.
                   </p>
                 </div>
@@ -521,7 +521,7 @@ export default function HomePageItalian() {
                 {/* Testo direttamente sotto l'immagine */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Collaborazione</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     Crediamo nel lavorare a stretto contatto con i nostri clienti per comprendere le loro esigenze uniche e sviluppare soluzioni su misura che affrontino le loro sfide specifiche.
                   </p>
                 </div>
@@ -549,7 +549,7 @@ export default function HomePageItalian() {
                 {/* Testo direttamente sotto l'immagine */}
                 <div className="text-center">
                   <h4 className="text-2xl font-bold mb-3 text-white">Privacy</h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-100">
                     Ci impegniamo a proteggere i tuoi dati e garantire che gli standard di privacy siano mantenuti in tutte le nostre implementazioni AI e processi aziendali.
                   </p>
                 </div>
@@ -573,7 +573,7 @@ export default function HomePageItalian() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Scopri il Tuo Potenziale di Profitto con l'AI
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto mb-10">
               Fai il nostro quiz interattivo per vedere quanto fatturato potresti generare e quali costi potresti risparmiare implementando soluzioni AI nella tua azienda.
             </p>
             
@@ -606,7 +606,7 @@ export default function HomePageItalian() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#4facfe] to-[#2d9d78]">
               Contattaci
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+            <p className="text-xl text-gray-100 max-w-3xl mx-auto mb-6">
               Pronto a trasformare la tua azienda con l'AI? Contattaci oggi!
             </p>
             
@@ -626,7 +626,7 @@ export default function HomePageItalian() {
               >
                 Fissa una Chiamata
               </motion.button>
-              <p className="mt-3 text-gray-300">
+              <p className="mt-3 text-gray-100">
                 Programma una chiamata strategica di 30 minuti con uno dei nostri esperti AI
               </p>
             </motion.div>
