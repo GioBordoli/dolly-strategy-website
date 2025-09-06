@@ -132,6 +132,12 @@ const Footer = () => {
             >
               {isItalian ? 'Informativa sulla Privacy' : 'Privacy Policy'}
             </Link>
+            <Link
+              href={isItalian ? '/it/terms' : '/terms'}
+              className="text-sm text-gray-400 hover:text-white transition"
+            >
+              {isItalian ? 'Termini e Condizioni' : 'Terms & Conditions'}
+            </Link>
           </div>
         </div>
       </div>

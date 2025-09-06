@@ -852,6 +852,14 @@ export default function HomePageItalian() {
             <p className="text-gray-400">
               © 2023 Dolly Strategy. Tutti i diritti riservati.
             </p>
+            <div className="mt-4 flex justify-center space-x-4">
+              <Link href="/it/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">
+                Informativa sulla Privacy
+              </Link>
+              <Link href="/it/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
+                Termini e Condizioni
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

@@ -851,6 +851,14 @@ export default function Home() {
             <p className="text-gray-400">
               © 2023 Dolly Strategy. All rights reserved.
             </p>
+            <div className="mt-4 flex justify-center space-x-4">
+              <Link href="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
+                Terms & Conditions
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
