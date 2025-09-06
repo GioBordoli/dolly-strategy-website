@@ -95,8 +95,8 @@ const Footer = () => {
             <address className="not-italic">
               <p className="mb-2">
                 {isItalian
-                  ? 'Via AI 123, Distretto Tecnologico, Milano, Italia'
-                  : '123 AI Street, Tech District, Milan, Italy'}
+                  ? 'Via Porta 9, Como, Italia, 22100'
+                  : 'via Porta 9, Como, Italy, 22100'}
               </p>
               <p className="mb-2">
                 <a
@@ -108,10 +108,10 @@ const Footer = () => {
               </p>
               <p className="mb-2">
                 <a
-                  href="tel:+391234567890"
+                  href="tel:+393333249234"
                   className="hover:text-gray-300 transition"
                 >
-                  +39 123 456 7890
+                  +39 333 324 9234
                 </a>
               </p>
             </address>

@@ -65,15 +65,15 @@ const translations = {
     message: 'Message',
     submit: 'Submit',
     companyInfo: 'Company Information',
-    address: '123 AI Street, Tech District, Milan, Italy',
+    address: 'via Porta 9, Como, Italy, 22100',
     emailContact: 'info@dollystrategy.com',
-    phone: '+39 123 456 7890',
+    phone: '+39 333 324 9234',
   },
   footer: {
     copyright: '© 2023 Dolly Strategy. All rights reserved.',
-    address: '123 AI Street, Tech District, Milan, Italy',
+    address: 'via Porta 9, Como, Italy, 22100',
     email: 'info@dollystrategy.com',
-    phone: '+39 123 456 7890',
+    phone: '+39 333 324 9234',
   },
 }
 

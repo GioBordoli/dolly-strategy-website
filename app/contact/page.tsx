@@ -57,8 +57,8 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-lg font-bold mb-2">Address</h3>
                 <p className="text-gray-700 mb-6">
-                  123 AI Street, Tech District<br />
-                  Milan, Italy
+                  via Porta 9, Como<br />
+                  Italy, 22100
                 </p>
                 
                 <h3 className="text-lg font-bold mb-2">Business Hours</h3>
@@ -78,8 +78,8 @@ export default function ContactPage() {
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Phone:</strong>{" "}
-                  <a href="tel:+391234567890" className="text-primary-blue hover:underline">
-                    +39 123 456 7890
+                  <a href="tel:+393333249234" className="text-primary-blue hover:underline">
+                    +39 333 324 9234
                   </a>
                 </p>
                 

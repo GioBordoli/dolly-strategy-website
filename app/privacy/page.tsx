@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-semibold mb-4 text-primary-blue">Contact Information</h2>
             <p>To ask questions or comment about this privacy policy and our privacy practices, contact us at:</p>
             <p className="font-medium">info@dollystrategy.com</p>
-            <p>or via our phone number: +39 123 456 7890</p>
+            <p>or via our phone number: +39 333 324 9234</p>
           </section>
         </div>
       </div>

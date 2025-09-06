@@ -700,7 +700,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Address</h4>
-                    <p className="text-gray-300">123 AI Street, Tech District, Milan, Italy</p>
+                    <p className="text-gray-300">via Porta 9, Como, Italy, 22100</p>
                   </div>
                 </div>
 
@@ -724,7 +724,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Phone</h4>
-                    <a href="tel:+391234567890" className="text-gray-300 hover:text-primary-green transition-colors">+39 123 456 7890</a>
+                    <a href="tel:+393333249234" className="text-gray-300 hover:text-primary-green transition-colors">+39 333 324 9234</a>
                   </div>
                 </div>
               </div>
@@ -824,7 +824,7 @@ export default function Home() {
               </h3>
               <address className="not-italic">
                 <p className="mb-2 text-gray-300">
-                  123 AI Street, Tech District, Milan, Italy
+                  via Porta 9, Como, Italy, 22100
                 </p>
                 <p className="mb-2">
                   <a
@@ -836,10 +836,10 @@ export default function Home() {
                 </p>
                 <p className="mb-2">
                   <a
-                    href="tel:+391234567890"
+                    href="tel:+393333249234"
                     className="text-gray-300 hover:text-primary-green transition-colors"
                   >
-                    +39 123 456 7890
+                    +39 333 324 9234
                   </a>
                 </p>
               </address>

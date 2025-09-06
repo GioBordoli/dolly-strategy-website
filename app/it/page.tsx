@@ -701,7 +701,7 @@ export default function HomePageItalian() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Indirizzo</h4>
-                    <p className="text-gray-300">Via AI 123, Distretto Tecnologico, Milano, Italia</p>
+                    <p className="text-gray-300">Via Porta 9, Como, Italia, 22100</p>
                   </div>
                 </div>
 
@@ -725,7 +725,7 @@ export default function HomePageItalian() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-white mb-1">Telefono</h4>
-                    <a href="tel:+391234567890" className="text-gray-300 hover:text-primary-green transition-colors">+39 123 456 7890</a>
+                    <a href="tel:+393333249234" className="text-gray-300 hover:text-primary-green transition-colors">+39 333 324 9234</a>
                   </div>
                 </div>
               </div>
@@ -825,7 +825,7 @@ export default function HomePageItalian() {
               </h3>
               <address className="not-italic">
                 <p className="mb-2 text-gray-300">
-                  Via AI 123, Distretto Tecnologico, Milano, Italia
+                  Via Porta 9, Como, Italia, 22100
                 </p>
                 <p className="mb-2">
                   <a
@@ -837,10 +837,10 @@ export default function HomePageItalian() {
                 </p>
                 <p className="mb-2">
                   <a
-                    href="tel:+391234567890"
+                    href="tel:+393333249234"
                     className="text-gray-300 hover:text-primary-green transition-colors"
                   >
-                    +39 123 456 7890
+                    +39 333 324 9234
                   </a>
                 </p>
               </address>

@@ -72,7 +72,7 @@ export default function PrivacyPolicyItalian() {
           <h2 className="text-2xl font-semibold mb-4 text-primary-blue">Informazioni di Contatto</h2>
           <p>Per porre domande o commentare questa informativa sulla privacy e le nostre pratiche sulla privacy, contattaci a:</p>
           <p className="font-medium">info@dollystrategy.com</p>
-          <p>o tramite il nostro numero di telefono: +39 123 456 7890</p>
+          <p>o tramite il nostro numero di telefono: +39 333 324 9234</p>
         </section>
       </div>
     </div>

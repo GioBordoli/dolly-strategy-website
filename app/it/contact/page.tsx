@@ -56,8 +56,8 @@ export default function ContactPageItalian() {
               <div>
                 <h3 className="text-lg font-bold mb-2">Indirizzo</h3>
                 <p className="text-gray-700 mb-6">
-                  Via AI 123, Distretto Tecnologico<br />
-                  Milano, Italia
+                  Via Porta 9, Como<br />
+                  Italia, 22100
                 </p>
                 
                 <h3 className="text-lg font-bold mb-2">Orari di Lavoro</h3>
@@ -77,8 +77,8 @@ export default function ContactPageItalian() {
                 </p>
                 <p className="text-gray-700 mb-6">
                   <strong>Telefono:</strong>{" "}
-                  <a href="tel:+391234567890" className="text-primary-blue hover:underline">
-                    +39 123 456 7890
+                  <a href="tel:+393333249234" className="text-primary-blue hover:underline">
+                    +39 333 324 9234
                   </a>
                 </p>
                 
